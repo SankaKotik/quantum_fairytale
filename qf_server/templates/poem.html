@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>
+		Absurdopedia
+	</title>
+</head>
+<body>
+	<article class="wrapper">
+		<!-- Вроде как семантическая разметка -->
+		<h1 class="autor">
+			Квантовая сказка
+		</h1>
+		<div class="year">
+			%s
+		</div>
+		<div class="poem">
+      %s
+		</div>
+	</article>	
+	<style>
+		.year {
+			text-align: center;
+			font-size: 0.8em;
+			padding-top: 5px; /* margin схлопывается с таковым у h1 */
+		}
+		.year::before, .year::after {
+			content: ' — ';
+		}
+		body {
+			text-align: center;
+		}
+		.wrapper {
+			text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+			display: inline-block;
+		}
+		h1 {
+			font-weight: normal;
+			text-align: center;
+		}
+		.poem {
+			font: 0.9em 'Courier', 'Courier New', 'mono';
+			white-space:pre;
+		}
+	</style>
+</body>
+</html>
